@@ -29,25 +29,35 @@ AES-128 is a symmetric key block cipher that encrypts and decrypts data in **128
 ## File Structure
 
 ```
-AES_128_Verilog/
+AES_Verilog/
 │
-├── rtl/
-│   ├── aes_core.v        # Main AES module
-│   ├── aes_encrypt.v     # Encryption module
-│   ├── aes_decrypt.v     # Decryption module
-│   ├── key_expansion.v   # Key expansion module
-│   └── sbox.v            # S-box lookup table
+├── RTL/                     # All Verilog RTL modules
+│   ├── aes128/              # AES-128 bit modules
+│   │   ├── main_encryption128.v
+│   │   ├── main_decryption128.v
+│   │   ├── round_keys.v
+│   │   ├── mix_column.v
+│   │   ├── shift_row.v
+│   │   ├── substitution_box.v
+│   │   └── substitution_byte.v
+│   │
+│   ├── aes512/              # AES-512 bit modules
+│   │   ├── AES_encryption_512.v
+│   │   └──AES_decryption_512.v
+│   │   
+│   │
+│   └── testbench/           # Common testbenches
+│       └── testbench_aes128.v
+|       └── testbench_modified_aes512.v
 │
-├── tb/
-│   ├── tb_aes.v          # Testbench for AES encryption/decryption
+├── sim/                     # Simulation-related files
+│   └── waveform/            # Simulation waveforms (optional)
 │
-├── sim/
-│   └── waveform/         # Simulation waveforms (optional)
-│
-├── docs/
-│   └── AES_Design.pdf    # Optional design documentation
+├── docs/                    # Documentation
+│   └── AES_Design.pdf       # Optional design documentation
 │
 └── README.md
+
 ```
 
 ---
