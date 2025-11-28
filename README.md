@@ -5,7 +5,7 @@ AES-128 Encryption &amp; Decryption in Verilog HDL. Implements full 128-bit AES 
 
 # AES-128 Bit Encryption & Decryption in Verilog
 
-![AES Logo](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard#/media/File:AES_(Rijndael)_Round_Function.png)
+![AES Logo](https://github.com/Yarok14Technologies/yarok14/blob/main/AES_(Rijndael)_Round_Function.png)
 
 ## Overview
 
