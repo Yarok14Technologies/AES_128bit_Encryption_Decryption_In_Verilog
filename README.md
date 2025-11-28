@@ -5,7 +5,7 @@ AES-128 Encryption &amp; Decryption in Verilog HDL. Implements full 128-bit AES 
 
 # AES-128 Bit Encryption & Decryption in Verilog
 
-![AES Logo](https://upload.wikimedia.org/wikipedia/commons/2/2c/AES-Logo.png)
+![AES Logo](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard#/media/File:AES_(Rijndael)_Round_Function.png)
 
 ## Overview
 
@@ -31,8 +31,8 @@ AES-128 is a symmetric key block cipher that encrypts and decrypts data in **128
 ```
 AES_Verilog/
 │
-├── RTL/                     # All Verilog RTL modules
-│   ├── aes128/              # AES-128 bit modules
+├── RTL/                             # All Verilog RTL modules
+│   ├── aes128/                      # AES-128 bit modules
 │   │   ├── main_encryption128.v
 │   │   ├── main_decryption128.v
 │   │   ├── round_keys.v
@@ -41,22 +41,23 @@ AES_Verilog/
 │   │   ├── substitution_box.v
 │   │   └── substitution_byte.v
 │   │
-│   ├── aes512/              # AES-512 bit modules
+│   ├── aes512/                      # AES-512 bit modules
 │   │   ├── AES_encryption_512.v
-│   │   └──AES_decryption_512.v
-│   │   
+│   │   └── AES_decryption_512.v
 │   │
-│   └── testbench/           # Common testbenches
-│       └── testbench_aes128.v
-|       └── testbench_modified_aes512.v
+│   └── testbench/                   # Testbenches for verification
+│       ├── testbench_aes128.v
+│       └── testbench_modified_aes512.v
 │
-├── sim/                     # Simulation-related files
-│   └── waveform/            # Simulation waveforms (optional)
+├── sim/                             # Simulation-related files
+│   └── waveform/                    # Simulation waveforms (optional)
 │
-├── docs/                    # Documentation
-│   └── AES_Design.pdf       # Optional design documentation
+├── docs/                            # Documentation
+│   ├── Advanced Encryption Standard (AES).pdf
+│   └── A Design Implementation and Comparative Analysis of Advanced Encryption Standard (AES) Algorithm.pdf
 │
 └── README.md
+
 
 ```
 
